@@ -105,6 +105,7 @@ nav .nav-right-section a {
 }
 
 .world {
+  display: flex;
   margin-left: 5px;
   margin-right: 5px;
   text-decoration: line-through;
@@ -112,6 +113,7 @@ nav .nav-right-section a {
 
 main .title {
   display: flex;
+  flex-direction: column;
   font-size: 64px;
   color: #060A24;
   letter-spacing: 0;
@@ -267,6 +269,7 @@ main div .button-title-about {
 }
 
 .footer-title {
+  text-align: center;
   font-size: 14px;
   color: #060A24;
   letter-spacing: 0;
@@ -303,6 +306,14 @@ main div .button-title-about {
   .blue-box {
     width: 100%;
     height: 1300px;
+  }
+
+  main .title {
+    flex-direction: column;
+  }
+
+  .world {
+    justify-content: center;
   }
 
   .img-chapters {
@@ -369,6 +380,10 @@ main div .button-title-about {
     color: #060A24;
     letter-spacing: 0;
     line-height: 24px;
+  }
+
+  main .title {
+    flex-direction: row;
   }
 
   #about-content {
